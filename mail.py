@@ -9,8 +9,12 @@ def cap_send():
  frame = vs.read()
  print("Captured")
  cv2.imwrite("captured.jpg",frame)
+ 
+ # Captured images will be sent from this Email
  Sender_Email = "lgroup788@gmail.com"
- Reciever_Email = "chethankumaranp@gmail.com"
+
+ # set the Email ID recieve the captured images
+ Reciever_Email = "chethan.g.8431@gmail.com"
  Password = "xxwmysjkhpceaykn"
  newMessage = EmailMessage()
  newMessage['Subject'] = "Unknown person"
